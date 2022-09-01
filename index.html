@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levered Free Cash Flow Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="leveredfreecashflowRadio" name="variables" checked>
+  <label for="leveredfreecashflowRadio">Levered free cash flow</label>
+
+  <input type="radio" id="EBITDARadio" name="variables">
+  <label for="EBITDARadio">EBITDA</label>
+
+  <input type="radio" id="capitalexpendituresRadio" name="variables">
+  <label for="capitalexpendituresRadio">Capital expenditures</label>
+
+  <input type="radio" id="netchangeinworkingcapitalRadio" name="variables">
+  <label for="netchangeinworkingcapitalRadio">Net change in working capital</label>
+
+  <input type="radio" id="mandatorydebtrepaymentsRadio" name="variables">
+  <label for="mandatorydebtrepaymentsRadio">Mandatory debt repayments</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">EBITDA</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Capital expenditures</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Net change in working capital</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">Mandatory debt repayments</label>
+  <input type="number" id="v4"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
